@@ -11,7 +11,7 @@ COPY icon.png /app/build/static/splash-dark.png
 # RUN sed -i 's/flex w-full justify-between items-center/flex w-full justify-between items-center hidden/g' /app/build/_app/immutable/nodes/2.*.js
 ADD ./scripts/check-ui.sh /usr/local/bin/check-ui.sh
 RUN chmod a+x /usr/local/bin/check-ui.sh
-e
+
 ENV ENV=prod
 ENV WEBUI_NAME="FreeGPT-2"
 ENV WEBUI_FAVICON_URL="/app/build/static/favicon.png"
